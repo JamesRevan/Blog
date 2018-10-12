@@ -28,12 +28,12 @@
     <%= f.password_field :current_password, autocomplete: "off", class: "form-control" %>
   </div>
 
-  <%= f.submit "Update, class: btn btn-primary btn-lg" %>
+  <%= f.submit 'Update', class: "btn btn-primary btn-lg" %>
   <% end %>
 
   <h3 class="text-center">Cancel my account</h3>
 
-  <p>Unhappy Bella? <%= button_to "Cancel my account", registration_path(resource_name), data: {confirm: "Art thou sure?" }, method: delete, class: "btn btn-danger btn-lg" %></p>
+  <p>Unhappy Bella? <%= button_to "Cancel my account", registration_path(resource_name), data: {confirm: "Art thou sure?" }, method: :delete, class: "btn btn-danger btn-lg" %></p>
 
   <%= link_to "Back", :back, class: "btn btn-primary btn-lg" %>
 
